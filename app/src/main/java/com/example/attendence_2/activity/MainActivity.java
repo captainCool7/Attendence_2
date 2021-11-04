@@ -1,25 +1,15 @@
-package com.example.attendence_2;
+package com.example.attendence_2.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.drawable.AnimationDrawable;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.attendence_2.databinding.ActivityMainBinding;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ActivityMainBinding binding;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
@@ -28,7 +18,12 @@ public class MainActivity extends AppCompatActivity{
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 //        binding.button.setOnClickListener(this);
+        binding.button.setOnClickListener(this);
+    }
 
+    @Override
+    public void onClick(View view) {
+        startActivity(new Intent(this,LandingActivity.class));
     }
 
 //    @Override

@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Attendence_2">
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LandingActivity"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

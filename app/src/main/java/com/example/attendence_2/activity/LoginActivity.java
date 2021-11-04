@@ -1,8 +1,10 @@
-package com.example.attendence_2;
+package com.example.attendence_2.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.attendence_2.R;
 
 public class LoginActivity extends AppCompatActivity {
 
