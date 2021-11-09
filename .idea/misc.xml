@@ -10,10 +10,12 @@
         <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/font/montserrat.xml" value="0.396875" />
         <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/font/poppins.xml" value="0.396875" />
         <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/font/poppins_medium.xml" value="0.396875" />
+        <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/layout/activity_class_view.xml" value="0.36666666666666664" />
         <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/layout/activity_landing.xml" value="0.35260416666666666" />
-        <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/code/Android_Projects/Attendence_2/app/src/main/res/layout/class_item.xml" value="0.33" />
       </map>
     </option>
   </component>
@@ -22,5 +24,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>

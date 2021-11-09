@@ -31,6 +31,9 @@ public class FirebaseStore {
                 result = FAILED_CODE;
             }
         });
+        Log.d("myApp","return "+result);
         return result;
     }
+
+
 }
