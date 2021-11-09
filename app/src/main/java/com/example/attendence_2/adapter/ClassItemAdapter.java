@@ -1,6 +1,7 @@
 package com.example.attendence_2.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.attendence_2.R;
+import com.example.attendence_2.activity.ClassViewActivity;
 
 import java.util.ArrayList;
 
@@ -37,6 +39,9 @@ public class ClassItemAdapter extends RecyclerView.Adapter<ClassItemAdapter.Clas
             @Override
             public void onClick(View v) {
                 Toast.makeText(context,holder.class_number.getText().toString(),Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(context, ClassViewActivity.class);
+                i.putExtra("classNumber",holder.class_number.getText().toString());
+                context.startActivity(i);
             }
         });
     }
