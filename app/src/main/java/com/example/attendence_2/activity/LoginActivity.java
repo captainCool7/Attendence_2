@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private boolean getData(){
-        email = binding.etEmail.getText().toString();
+        email = binding.etEmail.getText().toString().trim();
         password = binding.etPassword.getText().toString();
 
         if(email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()){

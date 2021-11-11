@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Attendence_2">
         <activity
+            android:name=".activity.DateViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ClassViewActivity"
             android:exported="false" />
         <activity

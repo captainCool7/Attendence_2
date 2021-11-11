@@ -17,4 +17,5 @@
     <color name="light_pink">#FFF4F2</color>
     <color name="my_gray">#C4C4C4</color>
     <color name="my_light_gray">#FBFBFB</color>
+    <color name="present_color">#9CCC65</color>
 </resources>

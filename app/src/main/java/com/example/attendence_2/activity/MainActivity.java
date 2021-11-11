@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setRecyclerView() {
+        binding.tvUname.setText("Welcome Back! "+model.getName());
         ClassItemAdapter adapter=new ClassItemAdapter(model.getClass_no(),MainActivity.this);
         GridLayoutManager manager = new GridLayoutManager(this,2);
         binding.rvClass.setLayoutManager(manager);

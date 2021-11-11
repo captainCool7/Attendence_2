@@ -40,9 +40,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
     private boolean getData() {
         name = binding.etName.getText().toString();
-        email = binding.etEmail.getText().toString().toLowerCase();
+        email = binding.etEmail.getText().toString().toLowerCase().trim();
         password = binding.etPassword.getText().toString();
-        u_id = binding.etPassword.getText().toString();
+        u_id = binding.etUsername.getText().toString();
         Log.d("myApp","In get data");
         if(email.isEmpty() || !Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             binding.etEmail.setError("Email address is invalid");
@@ -70,8 +70,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 .addOnSuccessListener(this, new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
-//                        FirebaseUser user = mAuth.getCurrentUser();
-//                        user.
                         int result = FirebaseStore.storeTeacherData(new TeacherModel(name,u_id,email));
                         startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
                     }
